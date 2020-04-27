@@ -1,0 +1,231 @@
+:root{
+    --green-color:#5bb034;
+    --gray-color:#b1becd;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.datos-de-usuario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.first-column{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(5,125px);
+    background: var(--gray-color);
+}
+
+.first-column img{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.first-column h1{
+    grid-column: 3/span 3;
+    grid-row: 2;
+    margin: 0;
+    display: grid;
+    align-items: flex-end;
+    color: white;
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.first-column .p-1{
+    grid-column: 3/span 5;
+    grid-row: 3;
+    margin: 0;
+    color: white;
+    display: grid;
+    align-items: center;
+}
+
+.first-column .p-2{
+    grid-column: 3/span 5;
+    grid-row: 4;
+    margin: 0;
+    color: white;
+}
+
+.second-column{
+    display: grid;
+    grid-template-rows: 80px 80px 1fr 70px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu ul{
+      margin: 0;
+      padding: 10px;
+}
+  
+.menu li{
+    list-style: none;
+}
+  
+.menu a{
+    text-decoration: none;
+    color: var(--gray-color);
+    font-size: 17px;
+}
+
+.menu a:hover{
+      color: black;
+}
+
+.container-button{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.usuario{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.empresa{
+    grid-column: 3;
+    grid-row: 2;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contratista{
+    grid-column: 4;
+    grid-row: 2;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.usuario button,
+.empresa button,
+.contratista button{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+    background-color: white;
+    cursor: pointer;
+}
+.usuario button:hover,
+.empresa button:hover,
+.contratista button:hover{
+    color: white;
+    background: var(--green-color);
+}
+
+.container-forms{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.name{
+    grid-column: 3/span 4;
+    display: grid;
+    align-items: center;
+}
+
+.email{
+    grid-column: 3/span 4;
+    display: grid;
+    align-items: center;
+}
+
+.password{
+    grid-column: 3/span 4;
+    display: grid;
+    align-items: center;
+}
+
+.confirm{
+    grid-column: 3/span 4;
+    display: grid;
+    align-items: center;
+}
+.create{
+    grid-column: 3/span 5;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.name label,
+.email label,
+.password label,
+.confirm label{
+    font-size: 17px;
+}
+
+.name input,
+.email input,
+.password input,
+.confirm input{
+    width: 374px;
+    height: 33px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid var(--gray-color);
+}
+
+::-webkit-input-placeholder{
+    color: var(--gray-color);
+}
+
+.create button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: var(--green-color);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.create-user{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+.create-user li{
+    grid-column: 2/span 4;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.create-user a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.create-user .account{
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.create-user .log{
+    color: var(--green-color);
+    font-size: 16px;
+}
