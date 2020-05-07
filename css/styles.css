@@ -6,12 +6,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  font-family: 'Roboto', sans-serif;}
 
 .datos-de-usuario {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.fondo-2{
+    background-image: url('/images/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .ingresar {
@@ -19,8 +25,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: burlywood;
   height: 100vh;
+  background-color: #d4cfcf99;
 }
 
 .ingresar .return {
@@ -38,30 +44,22 @@ body {
 }
 
 .account {
-  padding-bottom: 40px;
+    padding: 90px 80px 0;
 }
 
 .ingresar h1 {
-  color: white;
+  color: black;
   font-size: 30px;
   font-weight: lighter;
   margin: 0;
   padding: 40px 0 15px 0px;
 }
 
-.ingresar .first-p {
-  color: white;
-  font-size: 14px;
-  align-items: flex-end;
-  width: 400px;
+.ingresar .second-p {
+  color: black;
+  font-size: 16px;
 }
 
-.ingresar .second-p {
-  color: white;
-  font-size: 14px;
-  align-items: center;
-  width: 400px;
-}
 
 .second-column {
   display: flex;
@@ -180,7 +178,7 @@ body {
 
 @media screen and (max-width: 1439px) {
     .container-button {
-        margin: 40px 0 10px 0;
+        margin: 20px 0 10px 0;
     }
     .name, .email, .password, .confirm{
         margin: 5px 0;
@@ -189,16 +187,15 @@ body {
         margin-top: 30px;
     }
     .create-user{
-        margin: 10px 0 0 0;
+        margin: 0;
     }
     .create-user a{
         padding: 0;
     }
 }
 @media screen and (max-width: 1023px) {
-    .ingresar .first-p,
-    .ingresar .second-p{
-        width: 300px;
+    .ingresar .account {
+        padding: 100px 40px 0 40px;
     }
     .usuario, .empresa, .contratista{
         padding: 0 10px;
@@ -217,31 +214,28 @@ body {
         display: initial;
     }
     .account{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: justify;
-        padding: 50px 0 0 0;
-    }
-    .ingresar .first-p, .ingresar .second-p{
-        width: 400px;
+        text-align: center;
     }
     .container-button{
-        margin: 50px 0 20px 0;
+        margin: 50px 0 10px 0;
     }
     .name input, .email input, .password input, .confirm input{
         width: 370px;
     }
     .create-user{
-        margin: 15px 0;
+        margin: 5px 0;
     }
 }
 @media screen and (max-width: 479px) {
     .ingresar h1{
         font-size: 25px;
+        padding: 20px 0;
     }
-    .ingresar .first-p, .ingresar .second-p{
-        width: 280px;
+    .ingresar .account {
+        padding: 100px 40px 16px 40px;
+    }
+    .account .second-p{
+        text-align: justify;
     }
     .usuario button, .empresa button, .contratista button{
         width: initial;
