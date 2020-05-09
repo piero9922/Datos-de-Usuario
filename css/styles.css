@@ -1,6 +1,8 @@
 :root {
   --green-color: #5bb034;
   --gray-color: #b1becd;
+  --dark-color: #333333;
+
 }
 
 body {
@@ -11,6 +13,7 @@ body {
 .datos-de-usuario {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
 }
 
 .fondo-2{
@@ -25,7 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   background-color: #d4cfcf99;
 }
 
@@ -49,7 +52,7 @@ body {
 }
 
 .ingresar h1 {
-  color: black;
+  color: var(--dark-color);
   font-size: 30px;
   font-weight: lighter;
   margin: 0;
@@ -57,7 +60,7 @@ body {
 }
 
 .ingresar .second-p {
-  color: black;
+  color: var(--dark-color);
   font-size: 15px;
 }
 
@@ -126,6 +129,7 @@ body {
 .confirm label{
     font-size: 17px;
     margin: 10px 0;
+    color: var(--dark-color);
 }
 
 ::-webkit-input-placeholder{
@@ -221,9 +225,8 @@ body {
     .account-1{
         text-align: center;
         width: 380px;
-    }
-    .account-1 .second-p{
-        text-align: justify;
+        padding-bottom: 30px;
+
     }
     .container-button{
         margin: 20px 0 10px 0;
@@ -244,9 +247,6 @@ body {
     .account-1{
         text-align: center;
         width: 75%;
-    }
-    .account-1 .second-p{
-        text-align: justify;
     }
     .usuario button, .empresa button, .contratista button{
         width: initial;
